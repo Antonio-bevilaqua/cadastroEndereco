@@ -1,0 +1,70 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 31 de mai. de 2024, 11:32:42
+    Author     : toni_
+*/
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    font-family: Roboto, sans-serif;
+}
+
+.page-container {
+    width: 768px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: #000000 0px 0px 5px;
+    padding: 1rem 1rem;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+
+.input-row {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.input-group {
+    position: relative;
+    flex: 1;
+    
+    .input-append {
+        position: absolute;
+        right: 0px;
+        width: 35px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #afafaf;
+        z-index: 6;
+    }
+}
+.input-group:has(.input-append) input {
+    padding-right: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .page-container {
+        width: 100%;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+}

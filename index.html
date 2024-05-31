@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Cadastre-se</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONT AWESOME CSS -->
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+              integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- BOOTSTRAP CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+              crossorigin="anonymous" />
+
+        <!-- CUSTOM STYLESHEET -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- FONT ROBOTO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-container">
+            <h1>Endereço</h1>
+            <form method="post" action="/">
+                <div class="input-row">
+                    <div class="input-group">
+                        <span class="input-group-text" id="cep">CEP</span>
+                        <span class="input-append">
+                            <i class="fa-solid fa-id-card"></i>
+                        </span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="XXXXX-XXX" 
+                            name="cep"
+                            aria-label="cep" 
+                            aria-describedby="cep"
+                            mask="cep"
+                            required
+                            />
+                    </div>
+
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="rua">Rua</span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Rua Quinze de Novembro" 
+                            name="rua"
+                            aria-label="rua" 
+                            aria-describedby="rua"
+                            disabled
+                            required
+                            />
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <span class="input-group-text" id="bairro">Bairro</span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Centro" 
+                            name="bairro"
+                            aria-label="bairro" 
+                            aria-describedby="bairro"
+                            disabled
+                            required
+                            />
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="cidade">Cidade</span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="São Paulo" 
+                            name="cidade"
+                            aria-label="cidade" 
+                            aria-describedby="cidade"
+                            disabled
+                            required
+                            />
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="estado">Estado (UF)</span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            name="estado"
+                            placeholder="SP" 
+                            aria-label="estado" 
+                            aria-describedby="estado"
+                            disabled
+                            required
+                            />
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <span class="input-group-text" id="numero">Número</span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="27" 
+                            name="numero"
+                            aria-label="numero" 
+                            aria-describedby="numero"
+                            disabled
+                            mask="number"
+                            required
+                            />
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="complemento">Complemento</span>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            name="complemento"
+                            placeholder="Apt 710, quadra, lote, etc." 
+                            aria-label="complemento" 
+                            aria-describedby="complemento"
+                            />
+                    </div>
+                </div>
+
+                <div class="pt-2 container text-center">
+                    <button class="btn btn-primary" type="submit">CADASTRAR</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- FONTAWESOME JS -->
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" 
+            integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+        <!-- BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+                crossorigin="anonymous">
+        </script>
+
+        <!-- CUSTOM SCRIPT -->
+        <script type="text/javascript" src="controller.js"></script>
+    </body>
+</html>
